@@ -1,0 +1,40 @@
+<!-- Login Screen-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--'meta' tells the browser that we are using UTF-8 characters -->
+    <meta charset="UTF-8">
+    <!--'meta' tells our browser what version of internet explorer we are using :edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--'meta' tells the browser to load the page based on the dimesions of the device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tells the browser tab the name of the website  -->
+    <title>Login</title>
+    <!--link rel, is relationship between the css styling sheet we have and this script-->
+    <link rel ="stylesheet" href = "/css/style.min.css">
+    <!--This makes it so the page can take input and executed after our user hits login -->
+    <script defer src="/js/login.js"></script>
+</head>
+<!--Body tag  -->
+<body class = "login">
+    <div class = "contianer">
+        <h2 class = "text-center">Login</h2>
+        <br>
+        <form action = "/dashboard.html" class="loginForm">
+            <div class="input-group">
+                <label for="username" class="label">Username</label>
+                <input type= "text" id="Username" class="input">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <label for="password" class="label">Password</label>
+                <input type= "password" id="password" class="password">
+                <span class="error-message"></span>
+            </div>
+            <br>
+            <button class = "button" type = "submit">Login</button>
+        </form>
+    </div>
+    
+</body>
+</html>
